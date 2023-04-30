@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
     imat <<- NULL
   }
   get <- function() x
-  setinverse <- function(solve) imat <<- solve
+  setinverse <- function(inverse) imat <<- inverse
   getinverse <- function() imat
   list(set = set, get = get,
        setinverse = setinverse,
